@@ -1,6 +1,6 @@
 import pickle
 
-with open("./models/sentiment_analysis_pretrained.pkl", "rb") as model_file:
+with open("./model/sentiment_analysis_pretrained.pkl", "rb") as model_file:
     sa_model = pickle.load(model_file)
 
 def get_sentiment(text: str) -> list:
